@@ -1,0 +1,29 @@
+{
+  "name": "realtimechat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server",
+    "dev":"nodemon server"
+  },
+  "author": "Mark Mburu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "nodemonConfig":{
+    "restartable":"rs",
+    "ignore":["node_modules/**/node_modules"],
+    "delay": "2500",
+    "env":{
+      "NODE_ENV":"development",
+      "PORT": "4000"
+    }
+  }
+}
